@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Akbar Husain | Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+      .gradient-text {
+        background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+      }
+      .timeline-item:before {
+        content: "";
+        position: absolute;
+        left: -38px;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #3b82f6;
+        border: 4px solid #e0e7ff;
+      }
+      .timeline:before {
+        content: "";
+        position: absolute;
+        left: 33px;
+        top: 0;
+        height: 100%;
+        width: 2px;
+        background: #e0e7ff;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#home" class="text-xl font-bold gradient-text"
+              >Akbar Husain</a
+            >
+          </div>
+          <div class="hidden md:flex items-center space-x-8">
+            <a href="#home" class="text-gray-700 hover:text-blue-600 transition"
+              >Home</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Skills</a
+            >
+            <a
+              href="#education"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Education</a
+            >
+            <a
+              href="#experience"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-700 hover:text-blue-600 transition"
+              >Contact</a
+            >
+          </div>
+          <div class="md:hidden flex items-center">
+            <button id="menu-toggle" class="text-gray-700">
+              <i data-feather="menu"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white pb-4 px-4 shadow-lg"
+      >
+        <a
+          href="#home"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Home</a
+        >
+        <a
+          href="#skills"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Skills</a
+        >
+        <a
+          href="#education"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Education</a
+        >
+        <a
+          href="#experience"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Experience</a
+        >
+        <a
+          href="#projects"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Projects</a
+        >
+        <a
+          href="#contact"
+          class="block py-2 text-gray-700 hover:text-blue-600 transition"
+          >Contact</a
+        >
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      id="home"
+      class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto"
+    >
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Hi, I'm <span class="gradient-text">Akbar Husain</span>
+          </h1>
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">
+            Data Scientist
+          </h2>
+          <p class="text-gray-600 mb-8 max-w-lg">
+            Aspiring Data Scientist with hands-on experience in machine
+            learning, predictive modeling, and workflow automation. Skilled in
+            Python, SQL, and data visualization, with a strong track record of
+            delivering end-to-end ML projects including churn prediction and
+            house price forecasting. Adept at translating data insights into
+            actionable business solutions.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#contact"
+              class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition"
+              >Contact Me</a
+            >
+            <a
+              href="#projects"
+              class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition"
+              >View Projects</a
+            >
+            <a
+              href="https://drive.google.com/file/d/1aEcZv1qWxiQX7lw7cuc9JpKjy1Pl8Sv2/view?usp=sharing"
+              target="_blank"
+              download
+              class="border border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition"
+            >
+              Resume
+            </a>
+          </div>
+          <div class="mt-8 flex space-x-4">
+            <a
+              href="https://www.linkedin.com/in/akbar-kadiwala"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-600 transition"
+            >
+              <i data-feather="linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Akbarhusain12"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-900 transition"
+            >
+              <i data-feather="github"></i>
+            </a>
+            <a
+              href="https://www.kaggle.com/akbarhusain12"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-400 transition"
+            >
+              <i data-feather="bar-chart-2"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/Akbarhusain12/"
+              target="_blank"
+              class="text-gray-600 hover:text-yellow-600 transition"
+            >
+              <i data-feather="code"></i>
+            </a>
+          </div>
+        </div>
+        <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+          <div class="relative">
+            <!-- Circle container with gradient -->
+            <div
+              class="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full overflow-hidden flex items-center justify-center"
+            >
+              <!-- Profile Image -->
+              <img
+                src="profile.png"
+                alt="Data Scientist Illustration"
+                class="w-60 h-60 md:w-72 md:h-72 rounded-full object-cover"
+              />
+            </div>
+
+            <!-- Tagline Box -->
+            <div
+              class="absolute -bottom-12 left-1/2 transform -translate-x-1/2 bg-white px-10 py-2 rounded-lg shadow-lg min-w-[280px] text-center"
+            >
+              <p class="font-bold text-blue-600 text-lg">
+                Turning Data into Insights 🚀
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-100 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Technical Skills
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Programming -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <i data-feather="code" class="text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Programming</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                >Python</span
+              >
+              <span
+                class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                >R</span
+              >
+              <span
+                class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                >SQL</span
+              >
+              <span
+                class="bg-blue-50 text-blue-700 px-3 py-1 rounded-full text-sm"
+                >Advanced Excel</span
+              >
+            </div>
+          </div>
+
+          <!-- ML Concepts -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i data-feather="cpu" class="text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">ML Concepts</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Regression</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Classification</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Clustering</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >NLP</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Feature Engineering</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Artificial Neural Networks (ANN)</span
+              >
+              <span
+                class="bg-purple-50 text-purple-700 px-3 py-1 rounded-full text-sm"
+                >Model Evaluation</span
+              >
+            </div>
+          </div>
+
+          <!-- Libraries -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-green-100 p-3 rounded-lg mr-4">
+                <i data-feather="package" class="text-green-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Libraries</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >NumPy</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Pandas</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Scikit-learn</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >TensorFlow</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Keras</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >NLTK</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >SpaCy</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Matplotlib</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Seaborn</span
+              >
+              <span
+                class="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm"
+                >Plotly</span
+              >
+            </div>
+          </div>
+
+          <!-- Databases -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-yellow-100 p-3 rounded-lg mr-4">
+                <i data-feather="database" class="text-yellow-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Databases</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-sm"
+                >MySQL</span
+              >
+              <span
+                class="bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-sm"
+                >MongoDB</span
+              >
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-red-100 p-3 rounded-lg mr-4">
+                <i data-feather="tool" class="text-red-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Tools</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >Git/GitHub</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >Jupyter</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >VS Code</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >Google Colab</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >ETL</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >N8N</span
+              >
+              <span
+                class="bg-red-50 text-red-700 px-3 py-1 rounded-full text-sm"
+                >Power BI</span
+              >
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-indigo-100 p-3 rounded-lg mr-4">
+                <i data-feather="globe" class="text-indigo-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Languages</h3>
+            </div>
+            <div class="flex flex-wrap gap-2">
+              <span
+                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"
+                >English</span
+              >
+              <span
+                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"
+                >Hindi</span
+              >
+              <span
+                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"
+                >Gujarati</span
+              >
+              <span
+                class="bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full text-sm"
+                >Urdu</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Education
+        </h2>
+        <div class="relative pl-16 timeline">
+          <!-- Alliance University -->
+          <div class="relative mb-12 timeline-item" data-aos="fade-up">
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">
+                  Master of Computer Applications - Data Science
+                </h3>
+                <span
+                  class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                  >Expected May 2026</span
+                >
+              </div>
+              <p class="text-gray-600 mb-2">
+                Alliance University, Bangalore, Karnataka
+              </p>
+              <p class="text-gray-800 font-medium">CGPA: 9.5</p>
+              <div class="mt-4">
+                <p class="text-gray-700">
+                  Relevant coursework: Machine Learning, Data Mining, Big Data
+                  Analytics, Deep Learning, Statistical Methods
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- HNG University -->
+          <div
+            class="relative mb-12 timeline-item"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            >
+              <div class="flex justify-between items-start mb-2">
+                <h3 class="text-xl font-bold">
+                  Bachelor of Computer Applications
+                </h3>
+                <span
+                  class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full"
+                  >Mar 2024</span
+                >
+              </div>
+              <p class="text-gray-600 mb-2">HNG University, Patan, Gujarat</p>
+              <p class="text-gray-800 font-medium">CGPA: 8.47</p>
+              <div class="mt-4">
+                <p class="text-gray-700">
+                  Key subjects: Data Structures, Algorithms, Database
+                  Management, Object-Oriented Programming, Web Development
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20 bg-gray-100 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Work Experience
+        </h2>
+
+        <!-- Craloft -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-sm mb-8 hover:shadow-md transition"
+          data-aos="fade-up"
+        >
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-start mb-4"
+          >
+            <div>
+              <h3 class="text-xl font-bold">Data Automation Intern</h3>
+              <p class="text-gray-600">Craloft, Sidhpur, Gujarat</p>
+            </div>
+            <span
+              class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0"
+              >Dec 2023 – Apr 2024</span
+            >
+          </div>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Streamlined workflows using <strong>n8n</strong>, reducing file
+                processing time by <strong>60%</strong></span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Engineered <strong>Python scripts</strong> to clean,
+                preprocess, and integrate structured data into pipelines</span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Improved Amazon & Flipkart seller operations, eliminating over
+                <strong>10 hours of manual work weekly</strong></span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Implemented
+                <strong>data validation and consistency checks</strong>,
+                enhancing accuracy by <strong>20%</strong></span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Collaborated with developers to troubleshoot, refine, and
+                document workflows, increasing system reliability</span
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- United E-Commerce -->
+        <div
+          class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div
+            class="flex flex-col md:flex-row md:justify-between md:items-start mb-4"
+          >
+            <div>
+              <h3 class="text-xl font-bold">
+                E-Commerce Operations Executive (Part-time)
+              </h3>
+              <p class="text-gray-600">United E-Commerce, Sidhpur, Gujarat</p>
+            </div>
+            <span
+              class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0"
+              >May 2021 – Feb 2022</span
+            >
+          </div>
+          <ul class="space-y-2">
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Streamlined shipment and delivery data to improve logistics,
+                boosting route efficiency by <strong>12%</strong></span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Maintained and updated over
+                <strong>200 product listings</strong> on Amazon & Flipkart
+                marketplaces</span
+              >
+            </li>
+            <li class="flex items-start">
+              <i
+                data-feather="check-circle"
+                class="text-green-500 mr-2 mt-1"
+              ></i>
+              <span
+                >Boosted product visibility by implementing SEO-driven listings,
+                resulting in a <strong>15% increase in sales</strong></span
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Featured Projects
+        </h2>
+
+        <!-- FileFlow with N8N -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-bold">FileFlow with N8N</h3>
+              <span
+                class="bg-purple-100 text-purple-800 text-sm px-3 py-1 rounded-full"
+                >Internship Project</span
+              >
+            </div>
+            <p class="text-gray-600 mb-4">
+              A file management and ETL system tailored for Amazon & Flipkart
+              datasets, designed to automate and streamline data workflows.
+            </p>
+            <div class="mb-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Technologies Used:
+              </h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Node.js</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >n8n</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >ETL</span
+                >
+              </div>
+            </div>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Designed end-to-end <strong>ETL pipelines</strong> to
+                  extract, transform, and load data, reducing manual effort by
+                  <strong>70%</strong></span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Deployed <strong>n8n monitoring dashboards</strong> to track
+                  workflow performance</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Reduced human error by <strong>50%</strong> through
+                  automation of repetitive tasks</span
+                >
+              </li>
+            </ul>
+            <!-- <a
+              href="#"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 transition"
+            >
+              <span>View Project Details</span>
+              <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a> -->
+          </div>
+          <div class="flex items-center justify-center" data-aos="fade-left">
+            <div
+              class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-4 w-full h-full"
+            >
+              <img
+                src="http://static.photos/technology/640x360/45"
+                alt="FileFlow Project"
+                class="rounded-lg shadow-md w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Churn Prediction -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <div
+            class="flex items-center justify-center order-last lg:order-first"
+            data-aos="fade-right"
+          >
+            <div
+              class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-4 w-full h-full"
+            >
+              <img
+                src="http://static.photos/technology/640x360/46"
+                alt="Churn Prediction Project"
+                class="rounded-lg shadow-md w-full h-auto"
+              />
+            </div>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-left"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-bold">
+                End-to-End Churn Prediction Platform
+              </h3>
+              <a
+                href="https://github.com/Akbarhusain12/churn-project"
+                target="_blank"
+                class="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full flex items-center hover:bg-gray-200 transition"
+              >
+                <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">
+              ML system predicting customer churn with 95% accuracy, driving
+              retention strategy and reducing attrition by 20%.
+            </p>
+            <div class="mb-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Technologies Used:
+              </h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Scikit-learn</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Pandas</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Flask</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Machine Learning</span
+                >
+              </div>
+            </div>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Evaluated multiple classification models including
+                  <strong
+                    >Logistic Regression, Random Forest, Decision Tree, and
+                    Linear SVC</strong
+                  ></span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Implemented and deployed a
+                  <strong>Flask web application</strong> with modular prediction
+                  pipeline</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Architected scalable project structure with distinct
+                  components for
+                  <strong
+                    >data ingestion, transformation, and model training</strong
+                  ></span
+                >
+              </li>
+            </ul>
+            <a
+              href="https://github.com/Akbarhusain12/churn-project"
+              target="_blank"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 transition"
+            >
+              <span>View Project Details</span>
+              <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Bangalore House Prediction -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-right"
+          >
+            <div class="flex justify-between items-start mb-4">
+              <h3 class="text-xl font-bold">Bangalore House Prediction</h3>
+              <a
+                href="https://github.com/Akbarhusain12/Bangalore_house_prediction"
+                target="_blank"
+                class="bg-gray-100 text-gray-800 text-sm px-3 py-1 rounded-full flex items-center hover:bg-gray-200 transition"
+              >
+                <i data-feather="github" class="mr-1 w-4 h-4"></i> GitHub
+              </a>
+            </div>
+            <p class="text-gray-600 mb-4">
+              Regression-based ML model to predict house prices in Bangalore
+              with R² = 0.82, including an interactive web app for predictions.
+            </p>
+            <div class="mb-4">
+              <h4 class="font-semibold text-gray-800 mb-2">
+                Technologies Used:
+              </h4>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Python</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Machine Learning</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Regression</span
+                >
+                <span
+                  class="bg-gray-100 text-gray-800 px-3 py-1 rounded-full text-sm"
+                  >Feature Engineering</span
+                >
+              </div>
+            </div>
+            <ul class="space-y-2 mb-4">
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Applied preprocessing and feature engineering to improve
+                  model accuracy by <strong>15%</strong></span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Created an interactive <strong>Python web app</strong> for
+                  real-time predictions and visualizations</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i data-feather="check" class="text-green-500 mr-2 mt-1"></i>
+                <span
+                  >Optimized performance through hyperparameter tuning and
+                  evaluation with <strong>MAE and RMSE metrics</strong></span
+                >
+              </li>
+            </ul>
+            <a
+              href="https://github.com/Akbarhusain12/Bangalore_house_prediction"
+              target="_blank"
+              class="inline-flex items-center text-blue-600 hover:text-blue-800 transition"
+            >
+              <span>View Project Details</span>
+              <i data-feather="arrow-right" class="ml-1 w-4 h-4"></i>
+            </a>
+          </div>
+          <div class="flex items-center justify-center" data-aos="fade-left">
+            <div
+              class="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-xl p-4 w-full h-full"
+            >
+              <img
+                src="http://static.photos/technology/640x360/47"
+                alt="House Prediction Project"
+                class="rounded-lg shadow-md w-full h-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Place this INSIDE the section, after the last project grid -->
+      <div class="text-center mt-12" data-aos="fade-up">
+        <a
+          href="https://github.com/Akbarhusain12?tab=repositories"
+          target="_blank"
+          class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-700 transition"
+        >
+          More Projects →
+        </a>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="py-20 bg-gray-100 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Achievements
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                <i data-feather="award" class="text-blue-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Academic Excellence</h3>
+            </div>
+            <p class="text-gray-600">
+              Achieved consistent academic distinction in MCA Semesters 1 and 2,
+              ranking among the top performers and demonstrating strong
+              analytical thinking and problem-solving skills.
+            </p>
+          </div>
+          <div
+            class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                <i data-feather="bar-chart-2" class="text-purple-600"></i>
+              </div>
+              <h3 class="text-xl font-semibold">Online Profiles</h3>
+            </div>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="https://www.kaggle.com/akbarhusain12"
+                target="_blank"
+                class="flex items-center text-gray-700 hover:text-blue-600 transition"
+              >
+                <i data-feather="bar-chart-2" class="mr-2"></i> Kaggle
+              </a>
+              <a
+                href="https://github.com/Akbarhusain12?tab=repositories"
+                target="_blank"
+                class="flex items-center text-gray-700 hover:text-gray-900 transition"
+              >
+                <i data-feather="github" class="mr-2"></i> GitHub
+              </a>
+              <a
+                href="https://leetcode.com/u/Akbarhusain12/"
+                target="_blank"
+                class="flex items-center text-gray-700 hover:text-yellow-600 transition"
+              >
+                <i data-feather="code" class="mr-2"></i> LeetCode
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Get In Touch
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div data-aos="fade-right">
+            <h3 class="text-xl font-semibold mb-4">Contact Information</h3>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i data-feather="mail" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Email</h4>
+                  <a
+                    href="mailto:akbarhusainkadiwala32@gmail.com"
+                    class="text-gray-600 hover:text-blue-600 transition"
+                    >akbarhusainkadiwala32@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i data-feather="phone" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Phone</h4>
+                  <a
+                    href="tel:+919724294786"
+                    class="text-gray-600 hover:text-blue-600 transition"
+                    >+91 9724294786</a
+                  >
+                </div>
+              </div>
+              <div class="flex items-start">
+                <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                  <i data-feather="map-pin" class="text-blue-600"></i>
+                </div>
+                <div>
+                  <h4 class="font-medium text-gray-800">Location</h4>
+                  <p class="text-gray-600">Bangalore, Karnataka, India</p>
+                </div>
+              </div>
+            </div>
+            <div class="mt-8">
+              <h3 class="text-xl font-semibold mb-4">Connect With Me</h3>
+              <div class="flex space-x-4">
+                <a
+                  href="https://www.linkedin.com/in/akbar-kadiwala"
+                  target="_blank"
+                  class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition"
+                >
+                  <i data-feather="linkedin"></i>
+                </a>
+                <a
+                  href="https://github.com/Akbarhusain12"
+                  target="_blank"
+                  class="bg-gray-100 p-3 rounded-full text-gray-700 hover:bg-gray-200 transition"
+                >
+                  <i data-feather="github"></i>
+                </a>
+                <a
+                  href="https://www.kaggle.com/akbarhusain12"
+                  target="_blank"
+                  class="bg-blue-100 p-3 rounded-full text-blue-400 hover:bg-blue-200 transition"
+                >
+                  <i data-feather="bar-chart-2"></i>
+                </a>
+                <a
+                  href="https://leetcode.com/u/Akbarhusain12/"
+                  target="_blank"
+                  class="bg-yellow-100 p-3 rounded-full text-yellow-600 hover:bg-yellow-200 transition"
+                >
+                  <i data-feather="code"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div data-aos="fade-left">
+            <h3 class="text-xl font-semibold mb-4">Send Me a Message</h3>
+            <form class="space-y-4">
+              <div>
+                <label
+                  for="name"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="email"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="subject"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Subject</label
+                >
+                <input
+                  type="text"
+                  id="subject"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                />
+              </div>
+              <div>
+                <label
+                  for="message"
+                  class="block text-sm font-medium text-gray-700 mb-1"
+                  >Message</label
+                >
+                <textarea
+                  id="message"
+                  rows="4"
+                  class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition w-full md:w-auto"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#home" class="text-xl font-bold gradient-text"
+              >Akbar Husain</a
+            >
+            <p class="text-gray-400 mt-2">
+              Data Scientist & Machine Learning Engineer
+            </p>
+          </div>
+          <!-- <div class="flex space-x-6">
+            <a
+              href="https://www.linkedin.com/in/akbar-kadiwala"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i data-feather="linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/Akbarhusain12"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i data-feather="github"></i>
+            </a>
+            <a
+              href="https://www.kaggle.com/akbarhusain12"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i data-feather="bar-chart-2"></i>
+            </a>
+            <a
+              href="https://leetcode.com/u/Akbarhusain12/"
+              target="_blank"
+              class="text-gray-400 hover:text-white transition"
+            >
+              <i data-feather="code"></i>
+            </a>
+          </div> -->
+        </div>
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center"
+        >
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">
+            © 2025 Akbar Husain. All rights reserved.
+          </p>
+          <div class="flex space-x-6">
+            <a
+              href="#home"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Home</a
+            >
+            <a
+              href="#skills"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Skills</a
+            >
+            <a
+              href="#education"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Education</a
+            >
+            <a
+              href="#experience"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Projects</a
+            >
+            <a
+              href="#contact"
+              class="text-gray-400 hover:text-white text-sm transition"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Initialize AOS animations
+      AOS.init({
+        duration: 800,
+        easing: "ease-in-out",
+        once: true,
+      });
+
+      // Mobile menu toggle
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Close mobile menu when clicking on a link
+      document.querySelectorAll("#mobile-menu a").forEach((item) => {
+        item.addEventListener("click", () => {
+          document.getElementById("mobile-menu").classList.add("hidden");
+        });
+      });
+
+      // Replace feather icons
+      feather.replace();
+    </script>
+  </body>
+</html>
